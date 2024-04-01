@@ -2,6 +2,9 @@ package com.vikas.core.leetcode.stack;
 
 import java.util.Stack;
 
+/*
+https://leetcode.com/problems/daily-temperatures/
+ */
 public class DailyTemparatures {
     public static void main(String[] args){
 
@@ -10,7 +13,7 @@ public class DailyTemparatures {
         int[] result = new int[temperatures.length];
         Stack<Integer> stack = new Stack<>();
         for(int i = 0;i< temperatures.length;i++){
-            if(!stack.isEmpty() && temperatures[i] > stack.peek()){
+            while(!stack.isEmpty() && temperatures[i] > temperatures[stack.peek()]){
                 int j = stack.pop();
                 result[j] = i-j;
             }

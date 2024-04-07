@@ -1,4 +1,6 @@
-package com.vikas.core.leetcode.tree;
+package data_structure.tree;
+
+import data_structure.tree.model.TreeNode;
 
 public class IsSubTree {
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
@@ -14,15 +16,3 @@ public class IsSubTree {
         return dfs(root.left, subroot.left) && dfs(root.right, root.left);
     }
 }
-class TreeNode {
-     int val;
-     TreeNode left;
-     TreeNode right;
-     TreeNode() {}
-     TreeNode(int val) { this.val = val; }
-     TreeNode(int val, TreeNode left, TreeNode right) {
-         this.val = val;
-         this.left = left;
-         this.right = right;
-     }
- }

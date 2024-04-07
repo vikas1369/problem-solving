@@ -1,6 +1,8 @@
-/*
+package data_structure.tree;/*
 https://leetcode.com/problems/maximum-depth-of-binary-tree/
 */
+
+import data_structure.tree.model.TreeNode;
 
 /**
  * Definition for a binary tree node.
@@ -17,7 +19,7 @@ https://leetcode.com/problems/maximum-depth-of-binary-tree/
  *     }
  * }
  */
-class MaxDepthOfBinaryTree {
+public class MaxDepthOfBinaryTree {
     public int maxDepth(TreeNode root) {
         if(root == null){
             return 0;

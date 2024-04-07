@@ -1,5 +1,7 @@
 package com.vikas.core.leetcode.tree;
 
+import data_structure.tree.model.TreeNode;
+
 public class LowestCommonAncestor {
     public static void main(String[] args){
 

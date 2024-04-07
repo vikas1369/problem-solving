@@ -1,13 +1,16 @@
-/*
+package data_structure.heap;/*
 https://leetcode.com/problems/last-stone-weight/
 */
+import java.util.Arrays;
+import java.util.PriorityQueue;
+import java.util.stream.Collectors;
 
-class LastStoneWeight {
+public class LastStoneWeight {
     public int lastStoneWeight(int[] stones) {
         if(stones.length == 1){
             return stones[0];
         }
-        PriorityQueue<Integer> pq = new PriorityQueue<>((a,b) -> b-a);
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> b-a);
         pq.addAll(Arrays.stream(stones).boxed().collect(Collectors.toList()));
 
         while(pq.size()>1){
@@ -20,5 +23,6 @@ class LastStoneWeight {
             }
         }
         return pq.size()==1 ? pq.poll(): 0;
+
     }
 }

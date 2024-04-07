@@ -1,3 +1,5 @@
+import data_structure.tree.model.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,7 +15,7 @@
  *     }
  * }
  */
-class InverBinaryTree {
+public class InvertBinaryTree {
     public TreeNode invertTree(TreeNode root) {
         if(root==null) return null;
 

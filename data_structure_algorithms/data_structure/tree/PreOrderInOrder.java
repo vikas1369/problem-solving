@@ -1,4 +1,6 @@
-package com.vikas.core.leetcode.tree;
+package data_structure.tree;
+
+import data_structure.tree.model.TreeNode;
 
 import java.util.HashMap;
 import java.util.Map;

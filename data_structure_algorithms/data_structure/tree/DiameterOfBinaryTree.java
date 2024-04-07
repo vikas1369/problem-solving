@@ -1,6 +1,8 @@
-/*
+package data_structure.tree;/*
 https://leetcode.com/problems/diameter-of-binary-tree/
 */
+
+import data_structure.tree.model.TreeNode;
 
 /**
  * Definition for a binary tree node.
@@ -17,7 +19,10 @@ https://leetcode.com/problems/diameter-of-binary-tree/
  *     }
  * }
  */
-class Solution {
+public class DiameterOfBinaryTree {
+    public static void main(String[] args){
+
+    }
     public int diameterOfBinaryTree(TreeNode root) {
         int[] diameter = new int[1];
         maxDepth(root, diameter);
